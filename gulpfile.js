@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
+var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -11,8 +11,9 @@ var rename = require('gulp-rename');
 // Lint Task
 gulp.task('lint', function() {
     return gulp.src('app/js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
+        .pipe(eslint())
+        // Brick on failure to be super strict
+        .pipe(eslint.failOnError());
 });
 
 // Compile Our Sass
