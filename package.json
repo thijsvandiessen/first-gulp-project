@@ -1,0 +1,17 @@
+{
+  "name": "gulpproject",
+  "version": "1.0.0",
+  "description": "first project",
+  "main": "index.js",
+  "author": "Thijs van Diessen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "jshint": "^2.9.4"
+  }
+}
